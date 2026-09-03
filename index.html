@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ma. Karissa A. Peralta — Virtual Assistant, Customer Service & E-commerce Support Professional">
+<title>Ma. Karissa A. Peralta | Virtual Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071a3a;--navy2:#0d2854;--pink:#c94f78;--pink2:#ed8fac;--rose:#fff3f7;--ink:#16233b;--muted:#687386;--line:#e8eaf0;--white:#fff;--shadow:0 20px 60px rgba(7,26,58,.10)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}
+.container{width:min(1180px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,26,58,.90);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand-name{font:32px Parisienne,cursive;color:var(--pink2);line-height:1}
+.brand-sub{font-size:10px;letter-spacing:2.5px;color:#fff;margin-top:7px}
+.navlinks{display:flex;align-items:center;gap:27px}.navlinks a{font-size:12px;font-weight:700;color:#fff;position:relative;padding:30px 0;transition:.25s}
+.navlinks a:hover,.navlinks a.active{color:var(--pink2)}
+.navlinks a.active:after{content:"";position:absolute;bottom:19px;left:0;right:0;height:2px;background:var(--pink2)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+.hero{min-height:720px;padding-top:76px;position:relative;overflow:hidden;background:linear-gradient(120deg,#fff 0%,#fffafb 56%,#f8e4eb 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}
+.hero:before{width:500px;height:500px;right:-220px;top:60px;background:#f3c9d7;opacity:.55}
+.hero:after{width:330px;height:330px;left:-180px;bottom:-150px;background:#f8dfe7;opacity:.65}
+.hero-grid{min-height:644px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;position:relative;z-index:1}
+.hero-copy{padding:55px 0}.eyebrow{font:700 18px "Playfair Display",serif;color:var(--pink);letter-spacing:.6px}
+h1{font:700 68px/1.0 "Playfair Display",serif;color:var(--navy);margin:12px 0 18px;letter-spacing:-1.5px}
+.hero-rule{display:flex;align-items:center;gap:9px;color:var(--pink);width:360px}.hero-rule i{font-style:normal}.hero-rule:before,.hero-rule:after{content:"";height:2px;background:var(--pink);flex:1}
+.role{font:700 17px/1.45 "Playfair Display",serif;color:var(--pink);max-width:650px;margin:17px 0 12px}
+.hero-copy p{max-width:600px;color:#3c4656;line-height:1.75;font-size:14px}
+.ctas{display:flex;gap:13px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 20px;border-radius:8px;border:1px solid var(--navy);font-weight:700;font-size:13px;transition:.3s;cursor:pointer}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(7,26,58,.14)}
+.btn.primary{background:var(--pink);color:#fff;border-color:var(--pink)}
+.btn.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+.hero-photo{height:644px;display:flex;align-items:flex-end;justify-content:center;position:relative}
+.hero-photo:before{content:"";position:absolute;width:440px;height:440px;border-radius:50%;background:#fff;box-shadow:0 30px 70px rgba(7,26,58,.08);bottom:15px}
+.hero-photo img{height:93%;width:auto;object-fit:contain;position:relative;z-index:2;filter:drop-shadow(0 25px 28px rgba(7,26,58,.18))}
+.float-card{position:absolute;z-index:4;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);border:1px solid #fff;border-radius:14px;padding:14px 17px;box-shadow:var(--shadow);animation:float 4s ease-in-out infinite}
+.float-card strong{display:block;color:var(--navy);font-size:13px}.float-card span{font-size:11px;color:var(--muted)}
+.float-card.one{right:3%;top:23%}.float-card.two{left:4%;bottom:19%;animation-delay:1.2s}
+section{padding:90px 0}
+.section-head{text-align:center;margin-bottom:42px}.kicker{color:var(--pink);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase}.section-head h2{font:700 38px "Playfair Display",serif;color:var(--navy);margin-top:7px}.section-head p{color:var(--muted);font-size:13px;margin:10px auto 0;max-width:620px}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:29px;box-shadow:0 8px 30px rgba(7,26,58,.04)}
+.card h3{font:700 22px "Playfair Display",serif;color:var(--navy);margin-bottom:17px}.card p{font-size:13px;line-height:1.8;color:#465164}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}.stat{padding:15px;border-radius:12px;background:var(--rose);text-align:center}.stat b{display:block;color:var(--pink);font:700 22px "Playfair Display",serif}.stat span{font-size:10px;color:var(--muted)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service{padding:23px;border:1px solid var(--line);border-radius:16px;background:#fff;transition:.35s;position:relative;overflow:hidden}.service:after{content:"";position:absolute;inset:auto -30px -50px auto;width:130px;height:130px;border-radius:50%;background:#fff0f4;transition:.4s}.service:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#f0ccd8}.service:hover:after{transform:scale(1.5)}
+.service-icon{width:48px;height:48px;border-radius:14px;background:var(--pink);color:#fff;display:grid;place-items:center;font-size:20px;margin-bottom:17px;position:relative;z-index:1}.service h3{font-size:14px;color:var(--navy);margin-bottom:8px;position:relative;z-index:1}.service p{font-size:12px;line-height:1.65;color:var(--muted);position:relative;z-index:1}
+.split{display:grid;grid-template-columns:.7fr 1.3fr;gap:24px}.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.skill{border:1px solid var(--line);border-radius:11px;padding:12px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:8px}.skill i{width:20px;height:20px;background:var(--pink);color:#fff;border-radius:50%;font-style:normal;font-size:10px;display:grid;place-items:center}
+.timeline{position:relative;padding-left:70px}.timeline:before{content:"";position:absolute;left:45px;top:7px;bottom:5px;width:1px;background:#d9dde5}.job{position:relative;margin-bottom:32px}.job:last-child{margin-bottom:0}.job:before{content:"";position:absolute;left:-29px;top:6px;width:11px;height:11px;background:var(--pink);border-radius:50%;box-shadow:0 0 0 5px #fff,0 0 0 6px #f2cbd7}.year{position:absolute;left:-70px;top:1px;font-size:11px;color:var(--pink);font-weight:700}.job h3{font:700 16px "Playfair Display",serif;color:var(--navy)}.company{color:var(--pink);font-size:11px;font-weight:700;margin:4px 0 8px}.job ul{padding-left:17px}.job li{font-size:11px;line-height:1.55;margin:2px 0;color:#4c5666}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.edu-item{display:grid;grid-template-columns:85px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}.edu-item:last-child{border:0}.edu-item .date{color:var(--pink);font-weight:700;font-size:11px}.edu-item strong{font-size:12px;color:var(--navy)}.edu-item span{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.contact-section{background:linear-gradient(120deg,var(--navy),#102e5d);color:#fff;position:relative;overflow:hidden}.contact-section:before{content:"";position:absolute;width:450px;height:450px;border:1px solid rgba(255,255,255,.07);border-radius:50%;right:-170px;top:-180px}.contact-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;position:relative;z-index:1}.contact-section .section-head{text-align:left;margin-bottom:25px}.contact-section .section-head h2{color:#fff}.contact-section .section-head p{margin-left:0;color:#cbd5e6}.contact-info{display:grid;gap:12px}.contact-link{display:flex;gap:13px;align-items:center;padding:13px;border:1px solid rgba(255,255,255,.12);border-radius:12px;transition:.25s}.contact-link:hover{background:rgba(255,255,255,.08);transform:translateX(5px)}.contact-link b{font-size:12px}.contact-link small{display:block;color:#b9c5d8;font-size:10px;margin-top:2px}.ci{width:40px;height:40px;border-radius:50%;background:var(--pink);display:grid;place-items:center;font-weight:800}
+form{background:#fff;padding:25px;border-radius:17px;box-shadow:var(--shadow);display:grid;gap:13px}.field{display:grid;gap:6px}.field label{font-size:11px;font-weight:700;color:var(--navy)}.field input,.field textarea{border:1px solid #e1e5ec;border-radius:9px;padding:11px 12px;outline:none;transition:.2s}.field input:focus,.field textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px #c94f7815}.field textarea{min-height:120px;resize:vertical}.form-note{font-size:10px;color:#8790a0}
+footer{background:#04152f;color:#b8c4d7;text-align:center;padding:22px 0;font-size:10px}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:none}
+.delay1{transition-delay:.12s}.delay2{transition-delay:.22s}.delay3{transition-delay:.32s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #c94f7840}50%{box-shadow:0 0 0 12px #c94f7800}}
+@media(max-width:900px){.navlinks{gap:15px}.navlinks a{font-size:10px}.hero-grid{grid-template-columns:1fr}.hero-copy{padding-top:65px}.hero-photo{height:480px}.about-grid,.split,.contact-wrap{grid-template-columns:1fr}.services-grid{grid-template-columns:repeat(2,1fr)}.edu-grid{grid-template-columns:1fr}}
+@media(max-width:650px){header .nav{height:68px}.brand-name{font-size:27px}.menu{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;padding:8px 5%;background:var(--navy2);flex-direction:column;align-items:flex-start;gap:0}.navlinks.open{display:flex}.navlinks a{width:100%;padding:13px 0}.navlinks a.active:after{bottom:5px}.hero{padding-top:68px}.hero-grid{min-height:auto}.hero-copy{padding:60px 0 25px}.hero h1,h1{font-size:46px}.hero-rule{width:100%}.hero-photo{height:380px}.hero-photo:before{width:320px;height:320px}.float-card.one{right:0;top:20%}.float-card.two{left:0;bottom:13%}section{padding:65px 0}.section-head h2{font-size:31px}.services-grid{grid-template-columns:1fr}.skill-list{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.timeline{padding-left:47px}.timeline:before{left:27px}.job:before{left:-25px}.year{left:-47px}.card{padding:22px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a href="#home"><div class="brand-name">Ma. Karissa A. Peralta</div><div class="brand-sub">VIRTUAL ASSISTANT</div></a>
+<button class="menu" aria-label="Toggle navigation">☰</button>
+<nav class="navlinks">
+<a class="active" href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#skills">SKILLS</a><a href="#experience">EXPERIENCE</a><a href="#education">EDUCATION</a><a href="#contact">CONTACT</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div class="hero-copy reveal">
+<div class="eyebrow">HELLO, I'M</div>
+<h1>Ma. Karissa<br>A. Peralta</h1>
+<div class="hero-rule"><i>♥</i></div>
+<div class="role">CUSTOMER SERVICE REPRESENTATIVE | CUSTOMER SUPPORT | E-COMMERCE SUPPORT | VIRTUAL ASSISTANT</div>
+<p>Customer-focused professional with experience in customer service, mobile retention, e-commerce support, and outbound operations. I help businesses deliver excellent service and exceptional customer experiences.</p>
+<div class="ctas">
+<a class="btn primary" href="#about">✦ ABOUT ME</a>
+<a class="btn dark" href="Ma_Karissa_Peralta_Resume.pdf" download>↓ DOWNLOAD RÉSUMÉ</a>
+</div>
+</div>
+<div class="hero-photo reveal delay1">
+<div class="float-card one"><strong>Customer-focused</strong><span>Service & support</span></div>
+<div class="float-card two"><strong>Virtual Assistant</strong><span>Ready to support your team</span></div>
+<img src="karissa-photo.jpg" alt="Ma. Karissa A. Peralta">
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-head reveal"><div class="kicker">GET TO KNOW ME</div><h2>Professional, Reliable & Adaptable</h2><p>Organized support for customers, teams, and fast-moving business operations.</p></div>
+<div class="about-grid">
+<article class="card reveal"><h3>About Me</h3><p>I am a customer-focused professional with a strong background in customer service, mobile retention, e-commerce support, and outbound operations.<br><br>I am skilled in assisting customers with account inquiries, subscriptions, billing concerns, technical issues, and online orders.<br><br>I am known for strong communication, problem-solving, conflict resolution, and attention to detail. I am adaptable, organized, and committed to delivering a positive customer experience in fast-paced environments.</p>
+<div class="stats"><div class="stat"><b>12+</b><span>Core skills</span></div><div class="stat"><b>3</b><span>Work experiences</span></div><div class="stat"><b>2</b><span>Training programs</span></div></div></article>
+<article class="card reveal delay1"><h3>What I Bring</h3><div class="services-grid" style="grid-template-columns:1fr 1fr">
+<div class="service"><div class="service-icon">◉</div><h3>Customer Care</h3><p>Clear, patient and professional customer support.</p></div>
+<div class="service"><div class="service-icon">✓</div><h3>Accuracy</h3><p>Careful handling of records, orders and account details.</p></div>
+<div class="service"><div class="service-icon">⚡</div><h3>Adaptability</h3><p>Comfortable learning tools, processes and new workflows.</p></div>
+<div class="service"><div class="service-icon">✦</div><h3>Problem Solving</h3><p>Practical solutions with a customer-first mindset.</p></div>
+</div></article>
+</div>
+</div>
+</section>
+
+<section id="services" style="background:#fbfcfe">
+<div class="container">
+<div class="section-head reveal"><div class="kicker">SERVICES</div><h2>How I Can Support Your Business</h2><p>Flexible assistance across customer service, e-commerce, administration and communication.</p></div>
+<div class="services-grid">
+<div class="service reveal"><div class="service-icon">◉</div><h3>CUSTOMER SUPPORT</h3><p>Provide excellent support via chat, email, or phone. Resolve inquiries and help ensure customer satisfaction.</p></div>
+<div class="service reveal delay1"><div class="service-icon">🛒</div><h3>E-COMMERCE SUPPORT</h3><p>Handle orders, inquiries, returns, tracking, and refunds while supporting a smooth shopping experience.</p></div>
+<div class="service reveal delay2"><div class="service-icon">●</div><h3>ACCOUNT MANAGEMENT</h3><p>Manage account information, updates, subscriptions, and billing concerns with accuracy.</p></div>
+<div class="service reveal"><div class="service-icon">▤</div><h3>DATA ENTRY & ADMIN</h3><p>Accurate data entry, record keeping, reports, and other administrative support tasks.</p></div>
+<div class="service reveal delay1"><div class="service-icon">⚙</div><h3>TECHNICAL SUPPORT</h3><p>Troubleshoot technical issues and provide effective solutions in a timely manner.</p></div>
+<div class="service reveal delay2"><div class="service-icon">✉</div><h3>COMMUNICATION & COORDINATION</h3><p>Clear communication and coordination with customers and teams.</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container split">
+<article class="card reveal"><div class="kicker">CAPABILITIES</div><h3 style="margin-top:8px">Core Skills</h3><div class="skill-list">
+<div class="skill"><i>✓</i>Customer Service & Support</div><div class="skill"><i>✓</i>Conflict Resolution</div><div class="skill"><i>✓</i>Communication Skills</div><div class="skill"><i>✓</i>Technical Troubleshooting</div><div class="skill"><i>✓</i>Order Management</div><div class="skill"><i>✓</i>Account Management</div><div class="skill"><i>✓</i>Data Accuracy & Attention to Detail</div><div class="skill"><i>✓</i>Problem-Solving</div><div class="skill"><i>✓</i>Time Management</div><div class="skill"><i>✓</i>Fast Learner & Adaptability</div><div class="skill"><i>✓</i>Microsoft Office</div><div class="skill"><i>✓</i>Video & Photo Editing</div>
+</div></article>
+<article class="card reveal delay1" id="experience"><div class="kicker">CAREER</div><h3 style="margin-top:8px">Professional Experience</h3><div class="timeline">
+<div class="job"><span class="year">2018</span><h3>Customer Relation Executive</h3><div class="company">Accenture Philippines — Virgin Mobile Telecommunications</div><ul><li>Assisted customers with mobile plan subscriptions, account inquiries, and service-related concerns.</li><li>Resolved technical issues and provided appropriate customer support.</li><li>Managed customer account information, billing concerns, and data-related inquiries.</li><li>Maintained a positive customer experience through timely and accurate solutions.</li></ul></div>
+<div class="job"><span class="year">2018</span><h3>Customer Service Representative</h3><div class="company">Tech Mahindra Philippines — Fingerhut</div><ul><li>Assisted customers with online shopping inquiries and order-related concerns.</li><li>Tracked customer orders and provided updates regarding purchases and deliveries.</li><li>Managed customer accounts and updated personal information when necessary.</li><li>Resolved inquiries in a timely and professional manner.</li><li>Contributed to a positive customer experience through effective communication and problem-solving.</li></ul></div>
+<div class="job"><span class="year">2025</span><h3>Outbound Department Scanner</h3><div class="company">Shopee Express Philippines</div><ul><li>Scanned and processed items for outbound delivery according to destination requirements.</li><li>Verified that parcels were correctly sorted and assigned to designated areas.</li><li>Maintained accuracy and efficiency while handling a high volume of shipments.</li></ul></div>
+</div></article>
+</div>
+</section>
+
+<section id="education" style="background:#fbfcfe">
+<div class="container">
+<div class="section-head reveal"><div class="kicker">BACKGROUND</div><h2>Education & Training</h2></div>
+<div class="edu-grid">
+<article class="card reveal"><h3>Education</h3>
+<div class="edu-item"><div class="date">1998–2004</div><div><strong>Phoenix Learning School</strong><span>Primary Education</span></div></div>
+<div class="edu-item"><div class="date">2004–2006</div><div><strong>St. Mary's Academy Of Sto. Niño</strong><span>Secondary Education</span></div></div>
+<div class="edu-item"><div class="date">2006–2008</div><div><strong>Jocelyn V. Cacas Montessori School Inc.</strong><span>Secondary Education</span></div></div>
+</article>
+<article class="card reveal delay1"><h3>Training & Certifications</h3>
+<div class="edu-item"><div class="date">✓</div><div><strong>Alpha Academy by Alpha Virtual Solutions</strong><span>4-Week Virtual Assistant Training Program</span></div></div>
+<div class="edu-item"><div class="date">✓</div><div><strong>WorkWise Foundation</strong><span>10 Lessons Completed</span></div></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+<div class="container contact-wrap">
+<div>
+<div class="section-head reveal"><div class="kicker">LET'S WORK TOGETHER</div><h2>Have a project in mind?</h2><p>I'd love to hear about your business, your needs, and how I can help.</p></div>
+<div class="contact-info reveal delay1">
+<a class="contact-link" href="tel:+639972637251"><div class="ci">☎</div><div><b>Call / Mobile</b><small>+63 997 263 7251</small></div></a>
+<a class="contact-link" href="mailto:makarissaperalta@gmail.com"><div class="ci">✉</div><div><b>Email</b><small>makarissaperalta@gmail.com</small></div></a>
+<a class="contact-link" href="https://wa.me/639972637251" target="_blank" rel="noopener"><div class="ci">◉</div><div><b>WhatsApp</b><small>@makarissaperalta</small></div></a>
+<a class="contact-link" href="https://www.linkedin.com/in/makarissaperalta/" target="_blank" rel="noopener"><div class="ci">in</div><div><b>LinkedIn</b><small>linkedin.com/in/makarissaperalta</small></div></a>
+<a class="contact-link" href="https://www.facebook.com/" target="_blank" rel="noopener"><div class="ci">f</div><div><b>Facebook</b><small>MK Peralta</small></div></a>
+</div>
+</div>
+<form class="reveal delay1" id="contactForm">
+<div class="field"><label for="name">YOUR NAME</label><input id="name" name="name" required placeholder="Your name"></div>
+<div class="field"><label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+<div class="field"><label for="message">MESSAGE</label><textarea id="message" name="message" required placeholder="Tell me a little about what you need help with..."></textarea></div>
+<button class="btn primary" type="submit">SEND MESSAGE →</button>
+<div class="form-note">This form opens your email app with the message prepared for makarissaperalta@gmail.com.</div>
+</form>
+</div>
+</section>
+</main>
+<footer>© 2025 Ma. Karissa A. Peralta. All Rights Reserved.</footer>
+
+<script>
+const menu=document.querySelector('.menu'), nav=document.querySelector('.navlinks');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const sections=[...document.querySelectorAll('main section')], links=[...document.querySelectorAll('.navlinks a')];
+window.addEventListener('scroll',()=>{
+ let current='home';
+ sections.forEach(s=>{if(window.scrollY >= s.offsetTop-160) current=s.id});
+ links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current));
+},{passive:true});
+
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const f=new FormData(e.target);
+ const subject=encodeURIComponent('Portfolio Inquiry from '+f.get('name'));
+ const body=encodeURIComponent('Name: '+f.get('name')+'\nEmail: '+f.get('email')+'\n\nMessage:\n'+f.get('message'));
+ window.location.href='mailto:makarissaperalta@gmail.com?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>
